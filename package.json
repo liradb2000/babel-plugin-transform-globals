@@ -1,12 +1,12 @@
 {
-  "name": "babel-plugin-transform-globals",
-  "version": "1.0.1",
+  "name": "@liradb2000/babel-plugin-transform-globals",
+  "version": "1.0.1+liradb2000",
   "description": "Transform global variables in JavaScript",
-  "author": "Jonathan Neal <jonathantneal@hotmail.com>",
+  "author": "liradb2000 <liradb2000@live.co.kr>",
   "license": "CC0-1.0",
-  "repository": "jonathantneal/babel-plugin-transform-globals",
-  "homepage": "https://github.com/jonathantneal/babel-plugin-transform-globals#readme",
-  "bugs": "https://github.com/jonathantneal/babel-plugin-transform-globals/issues",
+  "repository": "liradb2000/babel-plugin-transform-globals",
+  "homepage": "https://github.com/liradb2000/babel-plugin-transform-globals#readme",
+  "bugs": "https://github.com/liradb2000/babel-plugin-transform-globals/issues",
   "main": "index.js",
   "module": "index.mjs",
   "files": [
