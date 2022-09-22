@@ -1,6 +1,6 @@
 {
   "name": "@liradb2000/babel-plugin-transform-globals",
-  "version": "1.0.2+liradb2000",
+  "version": "1.0.3+liradb2000",
   "description": "Transform global variables in JavaScript",
   "author": "liradb2000 <liradb2000@live.co.kr>",
   "license": "CC0-1.0",

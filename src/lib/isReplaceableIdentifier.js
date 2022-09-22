@@ -3,7 +3,7 @@ export default function isReplaceableIdentifier(path, identifiers) {
 		identifiers.hasOwnProperty(path.node.name) &&
 		!path.scope.hasBinding(path.node.name) &&
 		!path.parentPath.isMemberExpression({ property: path.node }) &&
-		!path.parentPath.isObjectProperty() &&
-		!path.parentPath.isClassMethod()
+		!path.parentPath.isFunctionParent() &&
+		!path.parentPath.isProperty()
 	);
 }
