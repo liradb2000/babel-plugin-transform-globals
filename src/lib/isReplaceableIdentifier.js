@@ -4,6 +4,7 @@ export default function isReplaceableIdentifier(path, identifiers) {
 		!path.scope.hasBinding(path.node.name) &&
 		!path.parentPath.isMemberExpression({ property: path.node }) &&
 		!path.parentPath.isFunctionParent() &&
-		!path.parentPath.isProperty()
+		!path.parentPath.isProperty() &&
+		!path.parentPath.isModuleSpecifier()
 	);
 }
