@@ -9,7 +9,7 @@ export default function babelPluginTransformGlobals (api, opts) {
 	const { types: t } = api;
 
 	// options
-	const replacementIdentifiers = getReplacementIdentifiers(opts.replace, t);
+	const replacementIdentifiers = getReplacementIdentifiers(opts.replace, opts.globalKey, t);
 	const importIdentifiers = getImportIdentifiers(opts.import);
 	const requireIdentifiers = getImportIdentifiers(opts.require);
 

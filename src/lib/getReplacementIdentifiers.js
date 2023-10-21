@@ -1,10 +1,10 @@
 import browserGlobals from './browserGlobals';
 
-export default function getReplacementIdentifiers (globals, t) {
+export default function getReplacementIdentifiers (globals, globalKey, t) {
 	return globals === 'browser'
 		? browserGlobals.reduce(
 			(object, name) => Object.assign(object, {
-				[name]: createMemberExpressionFromString(`window.${name}`, t)
+				[name]: createMemberExpressionFromString(`${globalKey}.${name}`, t)
 			}),
 			{}
 		)

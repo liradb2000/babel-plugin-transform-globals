@@ -134,7 +134,8 @@ test(
 	`window.addEventListener('click', () => {\n  window.document.createElement('div') instanceof window.Node;\n});`,
 
 	{
-		replace: 'browser'
+		replace: 'browser',
+		globalKey: 'window'
 	}
 );
 
